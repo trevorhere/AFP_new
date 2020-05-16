@@ -5,7 +5,10 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -27,8 +30,38 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Roboto`,
+          `Tinos`,
+          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    }
+    // {
+    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: `Roboto Mono`,
+    //         variants: [`400`, `700`]
+    //       },
+    //       {
+    //         family: `Roboto`,
+    //         subsets: [`latin`],
+    //         variants: [`100`,`400`, `700`]
+    //       },
+    //       {
+    //         family: `Tinos`,
+    //         subsets: [`serif`],
+    //         variants: [`100`,`400`, `700`]
+    //       },
+    //     ],
+    //   }
+    // }
     // `gatsby-plugin-offline`,
   ],
 }
