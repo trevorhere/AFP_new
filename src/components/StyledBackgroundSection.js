@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, StaticQuery } from 'gatsby'
+import { graphql, StaticQuery, Link } from 'gatsby'
 import styled from 'styled-components'
 
 import BackgroundImage from 'gatsby-background-image'
@@ -18,6 +18,10 @@ const BackgroundSection = ({ className }) => (
       }
     `}
     render={data => {
+        if (typeof window !== "undefined") {
+            // eslint-disable-next-line global-require
+            require("smooth-scroll")('a[href*="#"]')
+          }
       // Set ImageData.
       const imageData = data.desktop.childImageSharp.fluid
       return (
@@ -29,12 +33,10 @@ const BackgroundSection = ({ className }) => (
         >
             <Overlay>
             <Nav>
-                <NavItem href="">
+                <NavItem>
                 What We Do
                 </NavItem>
-                <NavItem 
-                    onClick={() => scrollTo('#bios')}
-                >
+                <NavItem to={`#bios`}>
                 Our Team
                 </NavItem>    
                 <NavItem>
@@ -68,7 +70,7 @@ const Nav = styled.div`
   padding-right: 1.1em;
   position: absolute;
 `
-const NavItem = styled.button`
+const NavItem = styled(Link)`
   padding: 0 1.2em;
   color: white;
   &:hover {

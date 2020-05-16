@@ -10,19 +10,9 @@ const HeroTitle = styled.h1`
   margin: 0;
   text-align: center;
 `
-
-const HeroSubtitle = styled.p`
-color: grey;
-padding-top: 20px;
-`
-
 const HeroText = styled.div`
   margin: 1rem;
   align-self: center;
-`
-const HeaderHR = styled.hr`
-  margin-top: 20px;
-  width: 60%;
 `
 const ImageContainer = styled.div`
   width: 500px;
@@ -36,17 +26,6 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`
-const Points = styled.div`
-  font-weight: bold;
-  padding: 0;
-  margin-bottom: -10px;
-  text-decoration: bold;
-`
-const PointItem = styled.div`
-  font-weight: bold;
-  padding: 0;
-  margin-bottom: -2px;
 `
 export default (props) => {
     return (

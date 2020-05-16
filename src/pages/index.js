@@ -1,8 +1,12 @@
 import React from "react"
+
 import styled from "styled-components"
 
 import Offering from '../components/Offering'
 import Bio from '../components/Bio'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
+
 
 import StyledBackgroundSection from '../components/StyledBackgroundSection'
 
@@ -56,6 +60,8 @@ export default () => (
         name={`Joel Lane`}
       />
     </Bios>
+    <Contact />
+    <Footer text={`© 2020  |  info@anchorflankpinch.com`} />
   </Container>
   </div>
 
