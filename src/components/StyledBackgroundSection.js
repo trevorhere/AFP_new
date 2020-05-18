@@ -33,14 +33,14 @@ const BackgroundSection = ({ className }) => (
         >
             <Overlay>
             <Nav>
-                <NavItem>
-                What We Do
+                <NavItem to={`#whatwedo`}>
+                    What We Do
                 </NavItem>
                 <NavItem to={`#bios`}>
-                Our Team
+                    Our Team
                 </NavItem>    
-                <NavItem>
-                Contact
+                <NavItem to={`#contact`}>
+                    Contact
                 </NavItem>
             </Nav>
             <HeroText>
@@ -73,6 +73,7 @@ const Nav = styled.div`
 const NavItem = styled(Link)`
   padding: 0 1.2em;
   color: white;
+  text-decoration: none;
   &:hover {
     text-decoration: underline;
   }
@@ -121,7 +122,6 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   background-position:  center;
   background-repeat: repeat-y;
   background-size: cover;
-  margin-bottom: 10%;
 `
 
 export default StyledBackgroundSection

@@ -3,7 +3,16 @@ import React from "react"
 import styled from "styled-components"
 
 import Offering from '../components/Offering'
+import OrgBanner from '../components/OrgBanner'
 import Bio from '../components/Bio'
+import { GusBio, TonyBio, PatBio, JoelBio,
+  PatImages,
+  TonyImages,
+  GusImages,
+  JoelImages
+
+} from '../components/BioContent'
+
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
@@ -14,6 +23,8 @@ export default () => (
   <div>
   <StyledBackgroundSection />
   <Container>
+    <SectionTitle id={`whatwedo`} >What We Do</SectionTitle>
+    < Hr />
     <Offering
       imageSrc={`TankerDrop.png`}
       title={`Field Exercises`}
@@ -42,32 +53,52 @@ export default () => (
       ]}
       pictureFirst={false}
     />
-    <Bios id="bios">
+    <OrgBanner 
+      images={[
+        `orgs/usfs.png`,
+        `orgs/cafire.png`,
+        `orgs/nafri.png`,
+        `orgs/nwcg.png`,
+        `orgs/ocfa.jpeg`,
+      ]}
+    />
+    <SectionTitle id={`bios`} >Our Team</SectionTitle>
+    < Hr />
+    <SectionSubtitle >Over 180 years of combined wildland firefighting experience.</SectionSubtitle>
+    <BioSection>
+    <Bios>
       <Bio 
         imageSrc={`pat/pat_3.png`}
         name={`Pat Basch`}
+        bio={PatBio}
+        images={PatImages}
       />
       <Bio 
         imageSrc={`tony/tony_1.png`}
         name={`Tony Duprey`}
+        bio={TonyBio}
+        images={TonyImages}
       />
       <Bio 
         imageSrc={`gus/gus_1.png`}
         name={`Gus Johnson`}
+        bio={GusBio}
+        images={GusImages}
       />
       <Bio 
         imageSrc={`joel/joel_7.png`}
         name={`Joel Lane`}
+        bio={JoelBio}
+        images={JoelImages}
       />
     </Bios>
-    <Contact />
+    </BioSection>
+    <Contact id={`contact`} />
     <Footer text={`© 2020  |  info@anchorflankpinch.com`} />
   </Container>
   </div>
 
 )
-
-
 
 const Container = styled.div`
   margin: 0;
@@ -78,50 +109,36 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
 `
-const UserWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  margin: 0 auto 12px auto;
-  &:last-child {
-    margin-bottom: 0;
-  }
-`
-const Avatar = styled.img`
-  flex: 0 0 96px;
-  width: 96px;
-  height: 96px;
-  margin: 0;
-`
-const Description = styled.div`
-  flex: 1;
-  margin-left: 18px;
-  padding: 12px;
-`
-const Username = styled.h2`
-  margin: 0 0 12px 0;
-  padding: 0;
-`
-const Excerpt = styled.p`
-  margin: 0;
-`
 
 const Bios = styled.div`
   display: flex;
   flex-direction: row;
-  height:100vh;
 `
 
-// const IndexPage = () => (
-//   <Layout>
-//     <SEO title="Home" />
-//     <h1>Hi people</h1>
-//     <p>Welcome to your new Gatsby site.</p>
-//     <p>Now go build something great.</p>
-//     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-//       <Image />
-//     </div>
-//     <Link to="/page-2/">Go to page 2</Link>
-//   </Layout>
-// )
+const BioSection = styled.h1`
+  font-weight: 100;
+  margin-bottom: 10%;
 
-// export default IndexPage
+`
+const Hr = styled.hr`
+background: rgba(144, 144, 144, 0.5);
+content: '';
+display: inline-block;
+height: 1px;
+margin-top: 1.5em;
+width: 6em;
+`
+
+const SectionTitle = styled.h1`
+    font-family: Tinos, serif;
+    font-weight: 100;
+    margin-top: 10%;
+
+`
+
+const SectionSubtitle = styled.p`
+    font-family: Tinos, serif;
+    font-weight: 100;
+`
+
+

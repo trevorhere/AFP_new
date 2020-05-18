@@ -51,7 +51,6 @@ const PointItem = styled.div`
 export default (props) => {
     return (
         <div>
-
         { props.pictureFirst?
             <Container>
         <ImageContainer>

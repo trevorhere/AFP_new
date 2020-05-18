@@ -1,5 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+import DynamicImage from './DynamicImage'
+
 
 const Container = styled.div`
     background-color: #191F2C;
@@ -7,6 +9,7 @@ const Container = styled.div`
     width: 100%;
     min-height: 2rem;
     padding: 5% 0;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,19 +27,7 @@ const FormRow = styled.div`
     padding: 5% 0;
 `
 
-const Input = styled.input`
-    margin: 0 1rem;
-    background: transparent;
-    color: #fff;
-    height: 38px;
-    width: 100%;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 1px solid #fff;
-    padding: .5rem .5rem;
-    margin: 20px;
-`
+
 
 const Button = styled.button`
     background:transparent;
@@ -52,20 +43,38 @@ const Button = styled.button`
         border: 1px solid #fff;
     }
 `
+const ImageRow =  styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-bottom: 3rem;
+  justify-content: center;
+  align-items: center;
+`
+
+const ImageCard =  styled.div`
+  border-radius: 4px;
+  @media (max-width: 768px) {
+    width: 90%; 
+    margin: 1rem 0;
+  }
+  min-width: 200px;
+  margin: 1rem;
+`
 
 export default (props) => {
     return (
         <Container>
-        <Title>Contact Us</Title>
-        <FormRow>
-            <form name="contact" method="post" data-netlify="true" action="/success">
-            <input type="hidden" name="form-name" value="contact" />
-            <Input  placeholder="email"  name="email" />
-            <Input  placeholder="name"  name="name" />
-            <Input  placeholder="message"  name="message" />
-            <Button text={`Submit`} type="submit">Submit </Button>
-            </form>
-        </FormRow>
+        <Title>Who We've Worked With</Title>
+        <ImageRow>
+        { props.images.map(i => {
+            return ( 
+            <ImageCard>
+                <DynamicImage src={i} /> 
+            </ImageCard>
+            )
+        })}
+        </ImageRow>
         </Container>
     )
 }
