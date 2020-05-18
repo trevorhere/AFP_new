@@ -47,6 +47,7 @@ const Button = styled.button`
     padding: 5px 15px;
     border: 1px solid #fff;
     color: #fff;
+    font-size: 20px;
     &:hover {
         background-color: white;
         color:black;

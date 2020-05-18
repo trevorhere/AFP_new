@@ -5,7 +5,7 @@ import styled from "styled-components"
 import BioModal from './BioModal'
 
 const HeroTitle = styled.h1`
-  font-size: .5em;
+  font-size: 20px;
   font-family: Tinos, serif;
   font-weight: 100;
   margin: 0;
@@ -16,8 +16,6 @@ const HeroText = styled.button`
   align-self: center;
   padding: 0 1.2em;
   color: black;
-
-
   background:transparent;
   margin: 10px;
   padding: 5px 15px;
