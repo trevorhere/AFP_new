@@ -56,7 +56,6 @@ const BackgroundSection = ({ className }) => (
   />
 )
 
-
 const Nav = styled.div`
   display: flex;
   color: white;
@@ -86,6 +85,7 @@ const HeroText = styled.div`
   justify-self: center;
   margin: 0 auto;
   text-align: center;
+
 `
 const HeroSubtitle = styled.p`
   color: white;
@@ -94,19 +94,16 @@ const HeroSubtitle = styled.p`
 
 const HeroTitle = styled.h1`
   color: white;
-  width: 500px;
   font-size: 3.5em;
   font-family: Tinos, serif;
   font-weight: 100;
   line-height: .7;
   margin: 0;
+  @media (max-width: 768px) {
+    font-size: 2em;
+  }
 `
-const HeaderHR = styled.hr`
-  color: white;
-  border-top: 1px solid white;
-  margin-top: 20px;
-  width: 60%;
-`
+
 const Overlay = styled.div`
     height: 100%;
     width: 100%;

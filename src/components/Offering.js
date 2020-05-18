@@ -4,30 +4,35 @@ import DynamicImage from './DynamicImage'
 import styled from "styled-components"
 
 const HeroTitle = styled.h1`
-  width: 500px;
   font-size: 2.5em;
   font-family: Tinos, serif;
   font-weight: 100;
   margin: 0;
-`
 
+`
 const HeroSubtitle = styled.p`
 color: grey;
 padding-top: 20px;
 `
-
 const HeroText = styled.div`
   width: 500px;
   margin: 1rem;
   align-self: center;
+  @media (max-width: 768px) {
+    max-width: 60%;
+  }
 `
 const HeaderHR = styled.hr`
   margin-top: 20px;
   width: 60%;
 `
 const ImageContainer = styled.div`
-  width: 500px;
+  min-width: 500px;
   margin: 1rem;
+  @media (max-width: 768px) {
+    font-size: 2em;
+    width: 70vw;
+  }
 `
 const Container = styled.div`
   margin: 10;
@@ -36,6 +41,7 @@ const Container = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 `
 const Points = styled.div`
   font-weight: bold;
@@ -52,7 +58,7 @@ export default (props) => {
     return (
         <div>
         { props.pictureFirst?
-            <Container>
+        <Container>
         <ImageContainer>
           <DynamicImage src={props.imageSrc} />
         </ImageContainer>

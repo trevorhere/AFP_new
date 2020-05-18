@@ -21,28 +21,11 @@ const Title = styled.h1`
     color: white;
     font-family: Tinos, serif;
     font-weight: 100;
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+      }
 `
 
-const FormRow = styled.div`
-    padding: 5% 0;
-`
-
-
-
-const Button = styled.button`
-    background:transparent;
-    margin: 10px;
-    padding: 5px 15px;
-    border: 1px solid #ff;
-    color: #fff;
-    &:hover {
-        background-color: white;
-        color:black;
-    }
-    &:active {
-        border: 1px solid #fff;
-    }
-`
 const ImageRow =  styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -54,12 +37,11 @@ const ImageRow =  styled.div`
 
 const ImageCard =  styled.div`
   border-radius: 4px;
-  @media (max-width: 768px) {
-    width: 90%; 
-    margin: 1rem 0;
-  }
   min-width: 200px;
   margin: 1rem;
+  @media (max-width: 768px) {
+    heigh: 20px;
+  }
 `
 
 export default (props) => {

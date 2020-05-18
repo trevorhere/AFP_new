@@ -113,6 +113,10 @@ const Container = styled.div`
 const Bios = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content:center;
+
 `
 
 const BioSection = styled.h1`
@@ -139,6 +143,7 @@ const SectionTitle = styled.h1`
 const SectionSubtitle = styled.p`
     font-family: Tinos, serif;
     font-weight: 100;
+    text-align: center;
 `
 
 

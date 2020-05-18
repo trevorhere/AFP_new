@@ -21,7 +21,7 @@ const HeroText = styled.button`
   background:transparent;
   margin: 10px;
   padding: 5px 15px;
-  border: 1px solid #ff;
+  border: 1px solid #000;
   &:hover {
       background-color: black;
       color:white;
@@ -77,7 +77,6 @@ export default (props) => {
             </Container>     
         }
 
- 
         </div>
     )
 }

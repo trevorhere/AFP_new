@@ -9,6 +9,7 @@ const Text = styled.div`
   align-self: center;
   padding: 0 1.2em;
   color: black;
+
 `
 
 const Container = styled.div`
@@ -31,6 +32,7 @@ height: 100%;
 overflow: auto;
 background-color: rgb(0,0,0);
 background-color: rgba(0,0,0,0.8);
+
 `
 
 const ModalContent = styled.div`
@@ -41,6 +43,10 @@ const ModalContent = styled.div`
     outline: 0;
     width: 80%;
     min-height:80% ;
+    @media (max-width: 768px) {
+      width: 100%; 
+      padding: .25rem;
+    }
 `
 const ModalButton = styled.button`
     border: none;
@@ -75,6 +81,7 @@ const BioText = styled.p`
 color: grey;
 padding-top: 20px;
 font-size: 1rem;
+
 `
 
 const ImageRow =  styled.div`

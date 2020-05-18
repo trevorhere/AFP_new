@@ -36,13 +36,16 @@ const Input = styled.input`
     border-bottom: 1px solid #fff;
     padding: .5rem .5rem;
     margin: 20px;
+    @media (max-width: 768px) {
+        width: 90%;
+      }
 `
 
 const Button = styled.button`
     background:transparent;
     margin: 10px;
     padding: 5px 15px;
-    border: 1px solid #ff;
+    border: 1px solid #fff;
     color: #fff;
     &:hover {
         background-color: white;
@@ -58,7 +61,7 @@ export default (props) => {
         <Container>
         <Title>Contact Us</Title>
         <FormRow>
-            <form name="contact" method="post" data-netlify="true" action="/success">
+            <form name="contact" method="post" data-netlify="true" action="/">
             <input type="hidden" name="form-name" value="contact" />
             <Input  placeholder="email"  name="email" />
             <Input  placeholder="name"  name="name" />
