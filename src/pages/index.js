@@ -68,12 +68,6 @@ export default () => (
     <BioSection>
     <Bios>
       <Bio 
-        imageSrc={`pat/pat_3.png`}
-        name={`Pat Basch`}
-        bio={PatBio}
-        images={PatImages}
-      />
-      <Bio 
         imageSrc={`tony/tony_1.png`}
         name={`Tony Duprey`}
         bio={TonyBio}
