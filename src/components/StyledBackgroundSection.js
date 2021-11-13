@@ -44,7 +44,7 @@ const BackgroundSection = ({ className }) => (
                 </NavItem>
             </Nav>
             <HeroText>
-            <HeroTitle>Flank</HeroTitle>
+            <HeroTitle>Anchor Flank</HeroTitle>
             <br/>
             <HeroTitle> & Pinch</HeroTitle>
             <HeroSubtitle><i>Leaders in wildland firefighter training.</i></HeroSubtitle>
