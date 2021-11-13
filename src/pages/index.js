@@ -65,7 +65,7 @@ export default () => (
     />
     <SectionTitle id={`bios`} >Our Team</SectionTitle>
     < Hr />
-    <SectionSubtitle >Over 180 years of combined wildland firefighting experience.</SectionSubtitle>
+    <SectionSubtitle >Over a century of combined wildland firefighting experience.</SectionSubtitle>
     <BioSection>
     <Bios>
       <Bio 
