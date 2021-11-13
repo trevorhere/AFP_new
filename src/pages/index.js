@@ -70,7 +70,7 @@ export default () => (
     <Bios>
       <Bio 
         imageSrc={`ken/ken_14.png`}
-        name={`Ken Perry`}
+        name={`Kenneth Perry`}
         bio={KenBio}
         images={KenImages}
       />
