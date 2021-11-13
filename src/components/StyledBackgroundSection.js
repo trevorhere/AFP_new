@@ -47,7 +47,7 @@ const BackgroundSection = ({ className }) => (
             <HeroTitle>Anchor Flank</HeroTitle>
             <br/>
             <HeroTitle> & Pinch</HeroTitle>
-            <HeroSubtitle><i>Leaders in wildland firefighter training.</i></HeroSubtitle>
+            <HeroSubtitle><i>Leaders in aerial wildland firefighting.</i></HeroSubtitle>
             </HeroText>
             </Overlay>
         </BackgroundImage>
