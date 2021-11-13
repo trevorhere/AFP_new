@@ -37,7 +37,7 @@ Joel served as an Air Attack unit instructor, in both Region 5 (California) and 
 
 Joel remains a promoter of his “Cost Savings Analysis for the use of Firefighting Aircraft in Initial Attack”, authored in 2005, which seeks to quantify the economic benefits of direct and indirect cost savings.
 
-More important to Joel than professional accomplishment is his family. Together with his wife of 35 years, Valerie, he has 3 sons, 3 daughters-in-law and 6 grandchildren. He loves spending time with Valerie, his 3 boys and their families, and his two German Shepherds, Otto and Evie.
+More important to Joel than professional accomplishment is his family. Together with his wife of 35 years, Valerie, he has 3 sons, 3 daughters-in-law and 7 grandchildren. He loves spending time with Valerie, his 3 boys and their families, and his two German Shepherds, Otto and Evie.
 `
 
 const KenBio = `
