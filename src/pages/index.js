@@ -1,15 +1,16 @@
 import React from "react"
-
 import styled from "styled-components"
 
 import Offering from '../components/Offering'
 import OrgBanner from '../components/OrgBanner'
 import Bio from '../components/Bio'
-import { GusBio, TonyBio, PatBio, JoelBio,
-  PatImages,
-  TonyImages,
+import { 
+  GusBio,
+  JoelBio,
   GusImages,
-  JoelImages
+  JoelImages,
+  KenBio,
+  KenImages
 
 } from '../components/BioContent'
 
@@ -68,10 +69,10 @@ export default () => (
     <BioSection>
     <Bios>
       <Bio 
-        imageSrc={`tony/tony_1.png`}
-        name={`Tony Duprey`}
-        bio={TonyBio}
-        images={TonyImages}
+        imageSrc={`ken/ken_14.png`}
+        name={`Ken Perry`}
+        bio={KenBio}
+        images={KenImages}
       />
       <Bio 
         imageSrc={`gus/gus_1.png`}

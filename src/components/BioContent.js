@@ -40,6 +40,31 @@ Joel remains a promoter of his “Cost Savings Analysis for the use of Firefight
 More important to Joel than professional accomplishment is his family. Together with his wife of 35 years, Valerie, he has 3 sons, 3 daughters-in-law and 6 grandchildren. He loves spending time with Valerie, his 3 boys and their families, and his two German Shepherds, Otto and Evie.
 `
 
+const KenBio = `
+​​Kenneth Perry retired from federal service in 2019 with 35 years with both the U.S. Forest
+Service and the Bureau of Land Management, in both ground and aviation operations. Kenneth
+started his fire career with Kern County Fire Department in 1985 as a seasonal engine crew-
+member. In 1988, he won a position working for the USFS with the Fulton Hotshots on the
+Sequoia National Forest, and by 1992 he had become a squad leader.
+In 1993 Kenneth joined the BLM Smokejumpers, based in Fairbanks Alaska, and during the
+next 8 years, Kenneth acquired ground qualifications up to Division/Group Supervisor and
+Incident Commander III. Kenneth also served in R&D as an FAA senior parachute rigger and
+test jumper.
+The majority of Kenneth’s career was spent in tactical aviation operations. He was qualified as
+an Air Tactical Group Supervisor in 1998 at a time when a paradigm shift was beginning within
+the BLM aerial supervision program, based on the Tactical Aerial Resource Management
+(TARM) study that ultimately recommended the development and implementation of the Aerial
+Supervision Module (ASM) program. That put Kenneth in position to be part of the development
+group; refining crew roles and responsibilities, SOPS and policy. In 2001, Kenneth hired into an
+ATS (ASM) position with the BLM National Aviation Office, based in Southern California. This
+allowed me to continue to develop the BLM’s ASM program, as well as the USFS’ program that
+was beginning to be looked at as a program.
+This position led to the opportunity to mentor and instruct at the National Aerial Supervision
+Academy (NASA), the California Aerial Supervision academy (CASA) and the National Aerial
+Firefighter Academy (NAFA) as a lecturer, Simulator Supervisor and mission flight evaluator.
+
+`
+
 const JoelImages = [
     `joel/joel_1.png`,
     `joel/joel_2.png`,
@@ -50,7 +75,6 @@ const JoelImages = [
     `joel/joel_9.png`,
     `joel/joel_6.png`,
 ]
-
 const GusImages = [
     `gus/gus_1.png`,
     `gus/gus_2.JPG`,
@@ -62,6 +86,21 @@ const GusImages = [
     `gus/gus_9.JPG`,
     `gus/gus_10.JPG`,
 ]
+const KenImages = [
+    `ken/ken_1.png`,
+    `ken/ken_2.png`,
+    `ken/ken_3.png`,
+    `ken/ken_4.png`,
+    `ken/ken_5.png`,
+    `ken/ken_7.png`,
+    `ken/ken_8.png`,
+    `ken/ken_9.png`,
+    `ken/ken_10.png`,
+    `ken/ken_11.png`,
+    `ken/ken_12.png`,
+    `ken/ken_13.png`,
+    `ken/ken_14.png`,
+]
 const TonyImages = [
     `tony/tony_2.jpg`,
     `tony/tony_3.jpg`,
@@ -70,8 +109,6 @@ const TonyImages = [
     `tony/tony_8.jpg`,
     `tony/tony_7.jpg`,
     `tony/tony_1.png`,
-
-
 ]
 
 
@@ -83,5 +120,7 @@ export {
     PatImages,
     TonyImages,
     GusImages,
-    JoelImages
+    JoelImages,
+    KenBio,
+    KenImages
 }
