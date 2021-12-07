@@ -32,13 +32,16 @@ const ImageRow =  styled.div`
   flex-direction: row;
   padding-bottom: 3rem;
   justify-content: center;
+  align-content: center;
   align-items: center;
 `
 
 const ImageCard =  styled.div`
   border-radius: 4px;
-  min-width: 200px;
-  margin: 1rem;
+  min-width: 8em;
+  min-height: 5em;
+  max-height: 8em;
+  margin:2rem 1rem;
   @media (max-width: 768px) {
     heigh: 20px;
   }

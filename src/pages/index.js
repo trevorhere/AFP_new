@@ -16,6 +16,7 @@ import {
 
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import DynamicImage from '../components/DynamicImage'
 
 
 import StyledBackgroundSection from '../components/StyledBackgroundSection'
@@ -25,6 +26,16 @@ export default () => (
   <StyledBackgroundSection />
   <Container>
     <SectionTitle id={`whatwedo`} >What We Do</SectionTitle>
+    < Hr />
+    <AFP_FS3D>
+        <ImageContainer>
+          <DynamicImage src={'AFPLogoBlack.png'} />
+        </ImageContainer>
+        <Plus>+</Plus>
+        <ImageContainer>
+          <DynamicImage src={'FS3DLogoBlack.png'} />
+        </ImageContainer>
+    </AFP_FS3D>
     < Hr />
     <Offering
       imageSrc={`TankerDrop.png`}
@@ -54,13 +65,28 @@ export default () => (
       ]}
       pictureFirst={false}
     />
+    <Offering
+      imageSrc={`FS3DLogoBlue.png`}
+      title={`FS3D VR Training`}
+      tagline={`
+       Immersive digital wildfire training using state of the art Virtual Reality hardware and software.
+      `}
+      points={[
+        `Real time multi-user interaction`,
+        `Over 20 flight platforms and configurations`,
+        `360 degree field-of-view simulations`,
+        `Control fire and environment characteristics`,
+      ]}
+      pictureFirst={true}
+    />
     <OrgBanner 
       images={[
         `orgs/usfs.png`,
-        `orgs/cafire.png`,
-        `orgs/nafri.png`,
-        `orgs/nwcg.png`,
-        `orgs/ocfa.jpeg`,
+        `orgs/calfire.png`,
+        `orgs/NAFRI_1.png`,
+        `orgs/nwcg_1.png`,
+        `orgs/OCFA_logo.png`,
+        `orgs/AFRL.png`,
       ]}
     />
     <SectionTitle id={`bios`} >Our Team</SectionTitle>
@@ -89,7 +115,7 @@ export default () => (
     </Bios>
     </BioSection>
     <Contact id={`contact`} />
-    <Footer text={`© 2020  |  info@anchorflankpinch.com`} />
+    <Footer text={`© 2021  |  info@anchorflankpinch.com`} />
   </Container>
   </div>
 
@@ -140,5 +166,29 @@ const SectionSubtitle = styled.p`
     font-weight: 100;
     text-align: center;
 `
+const AFP_FS3D = styled.div`
+  margin: 10;
+  padding: 5% 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`
 
 
+const ImageContainer = styled.div`
+  min-width: 20em;
+  margin: 1rem;
+  @media (max-width: 768px) {
+    font-size: 2em;
+    width: 70vw;
+  }
+`
+const Plus = styled.h1`
+  font-size: 3.4em;
+  font-weight: 200;
+  margin: 1rem;
+  @media (max-width: 768px) {
+    font-size: 2em;
+    width: 70vw;
+  }
+`
