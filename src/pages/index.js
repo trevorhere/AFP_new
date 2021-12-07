@@ -172,6 +172,10 @@ const AFP_FS3D = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
 `
 
 
@@ -179,16 +183,12 @@ const ImageContainer = styled.div`
   min-width: 20em;
   margin: 1rem;
   @media (max-width: 768px) {
-    font-size: 2em;
-    width: 70vw;
+    width: 80% !important;
   }
+
 `
 const Plus = styled.h1`
   font-size: 3.4em;
   font-weight: 200;
   margin: 1rem;
-  @media (max-width: 768px) {
-    font-size: 2em;
-    width: 70vw;
-  }
 `
