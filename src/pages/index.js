@@ -66,7 +66,7 @@ export default () => (
       pictureFirst={false}
     />
     <Offering
-      imageSrc={`FS3DLogoBlue.png`}
+      imageSrc={`FS3DLogoBlack.png`}
       title={`FS3D VR Training`}
       tagline={`
        Immersive digital wildfire training using state of the art Virtual Reality hardware and software.
